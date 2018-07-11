@@ -43,19 +43,19 @@ The model is based on Christopher Hesse's [Tensorflow implementation of the pix2
 Clone this repository locally. In a terminal, run the following command:
 
 ```
-git clone https://github.com/IBM/MAX-pix2pix.git
+git clone https://github.com/IBM/MAX-Image-Colorizer.git
 ```
 
 Change directory into the repository base folder:
 
 ```
-cd MAX-pix2pix
+cd MAX-Image-Colorizer
 ```
 
 To build the docker image locally, run:
 
 ```
-docker build -t max-pix2pix .
+docker build -t MAX-Image-Colorizer .
 ```
 
 All required model assets will be downloaded during the build process. _Note_ that currently this docker image is CPU only (we will add support for GPU images later).
@@ -65,7 +65,7 @@ All required model assets will be downloaded during the build process. _Note_ th
 To run the docker image, which automatically starts the model serving API, run:
 
 ```
-docker run -it -p 5000:5000 max-pix2pix
+docker run -it -p 5000:5000 MAX-Image-Colorizer
 ```
 
 ## 3. Use the Model
