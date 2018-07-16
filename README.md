@@ -55,7 +55,7 @@ cd MAX-Image-Colorizer
 To build the docker image locally, run:
 
 ```
-docker build -t MAX-Image-Colorizer .
+docker build -t max-image-colorizer .
 ```
 
 All required model assets will be downloaded during the build process. _Note_ that currently this docker image is CPU only (we will add support for GPU images later).
@@ -65,7 +65,7 @@ All required model assets will be downloaded during the build process. _Note_ th
 To run the docker image, which automatically starts the model serving API, run:
 
 ```
-docker run -it -p 5000:5000 MAX-Image-Colorizer
+docker run -it -p 5000:5000 max-image-colorizer
 ```
 
 ## 3. Use the Model
