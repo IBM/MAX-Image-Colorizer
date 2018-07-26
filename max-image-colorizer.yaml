@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: max-image-colorizer
+spec:
+  selector:
+    app: max-image-colorizer
+  ports:
+  - port: 5000
+  type: NodePort
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: max-image-colorizer
+  labels:
+    app: max-image-colorizer
+spec:
+  selector:
+    matchLabels:
+      app: max-image-colorizer
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: max-image-colorizer
+    spec:
+      containers:
+      - name: max-image-colorizer
+        image: codait/max-image-colorizer:latest
+        ports:
+        - containerPort: 5000
