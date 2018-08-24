@@ -1,2 +1,6 @@
 Dockerfile
 README.*
+.git/
+.idea/
+tests/
+.gitignore
