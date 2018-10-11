@@ -1,10 +1,8 @@
 from flask import make_response
 from flask_restplus import Namespace, Resource, fields
 from werkzeug.datastructures import FileStorage
-
 from config import MODEL_META_DATA
 from core.backend import ModelWrapper
-
 import numpy as np
 import base64
 
@@ -34,7 +32,8 @@ predict_response = api.model('ModelPredictResponse', {
 
 # Set up parser for input data (http://flask-restplus.readthedocs.io/en/stable/parsing.html)
 input_parser = api.parser()
-input_parser.add_argument('image', type=FileStorage, location='files', required=True)
+input_parser.add_argument('image', type=FileStorage, location='files', required=True,
+                          help="Black and white image to colorize")
 
 
 @api.route('/predict')
