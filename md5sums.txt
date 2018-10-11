@@ -1,0 +1,3 @@
+c297ab5ca6fbd7ab55008d564978ec46  assets/pix2pix-bw-to-color/saved_model.pb
+2ce9330e710615d669a93b917f0aae80  assets/pix2pix-bw-to-color/variables/variables.data-00000-of-00001
+d8a39f02827d871533f08059afc1caee  assets/pix2pix-bw-to-color/variables/variables.index
