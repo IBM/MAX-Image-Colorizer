@@ -33,7 +33,7 @@ predict_response = api.model('ModelPredictResponse', {
 # Set up parser for input data (http://flask-restplus.readthedocs.io/en/stable/parsing.html)
 input_parser = api.parser()
 input_parser.add_argument('image', type=FileStorage, location='files', required=True,
-                          help="Black and white image to colorize")
+                          help="Black and white JPEG or PNG image to colorize")
 
 
 @api.route('/predict')

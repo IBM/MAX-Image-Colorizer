@@ -8,7 +8,7 @@ The model is based on Christopher Hesse's [Tensorflow implementation of the pix2
 ## Model Metadata
 | Domain | Application | Industry  | Framework | Training Data | Input Data Format |
 | ------------- | --------  | -------- | --------- | --------- | -------------- |
-| Vision | Image Coloring | General | TensorFlow | [COCO Dataset](http://mscoco.org/) | Images |
+| Vision | Image Coloring | General | TensorFlow | [COCO Dataset](http://mscoco.org/) | JPEG or PNG Image |
 
 ## References
 * _J. Isola, J. Zhu, T. Zhou, A. Efros_, ["Image-to-Image Translation with Conditional Adversarial Networks"](https://arxiv.org/abs/1611.07004), CVPR 2017
