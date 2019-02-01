@@ -9,7 +9,7 @@ SWAGGER_UI_DOC_EXPANSION = 'none'
 
 # API metadata
 API_TITLE = 'MAX Image Colorizer'
-API_DESC = 'An API for serving models'
+API_DESC = 'Adds color to black and white images.'
 API_VERSION = '0.1'
 
 # default model
