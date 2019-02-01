@@ -8,7 +8,7 @@ SWAGGER_UI_DOC_EXPANSION = 'none'
 # Application settings
 
 # API metadata
-API_TITLE = 'Model Asset Exchange Server'
+API_TITLE = 'MAX Image Colorizer'
 API_DESC = 'An API for serving models'
 API_VERSION = '0.1'
 
