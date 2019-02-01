@@ -29,7 +29,7 @@ class ModelWrapper(MAXModelWrapper):
         self.output_name = output_name
         logger.info('Loaded model')
 
-    def predict(self, x):
+    def _predict(self, x):
 
         # Run prediction on input
         preds = self.output_tensor.eval(feed_dict={self.input_name: x}, session=self.sess)
