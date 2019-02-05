@@ -1,3 +1,5 @@
+from maxfw.model import MAXModelWrapper
+
 import tensorflow as tf
 from tensorflow.contrib.saved_model.python.saved_model import signature_def_utils
 from tensorflow import saved_model as sm
@@ -7,7 +9,7 @@ from config import DEFAULT_MODEL_PATH
 logger = logging.getLogger()
 
 
-class ModelWrapper(object):
+class ModelWrapper(MAXModelWrapper):
     """Model wrapper for TensorFlow models in SavedModel format"""
     def __init__(self, path=DEFAULT_MODEL_PATH):
         logger.info('Loading model from: {}...'.format(path))
@@ -27,7 +29,7 @@ class ModelWrapper(object):
         self.output_name = output_name
         logger.info('Loaded model')
 
-    def predict(self, x):
+    def _predict(self, x):
 
         # Run prediction on input
         preds = self.output_tensor.eval(feed_dict={self.input_name: x}, session=self.sess)
