@@ -1,7 +1,8 @@
 from core.model import ModelWrapper
 from maxfw.core import MAX_API, PredictAPI
+from config import ERR_MSG
 
-from flask import send_file
+from flask import send_file, abort
 from werkzeug.datastructures import FileStorage
 
 import io
@@ -30,7 +31,11 @@ class ModelPredictAPI(PredictAPI):
         input_array = np.array(input_encoded)
         input_instance = np.expand_dims(input_array, axis=0)
 
-        image = self.model_wrapper.predict(input_instance)
+        try:
+            image = self.model_wrapper.predict(input_instance)
+        except IOError as e:
+            if e.args[0] == ERR_MSG:
+                abort(400, ERR_MSG)
 
         response = send_file(io.BytesIO(image), attachment_filename='result.png', mimetype='image/png')
 
