@@ -1,5 +1,6 @@
-# IBM Code Model Asset Exchange: Image Translation (Grayscale to Color)
+[![Build Status](https://travis-ci.com/IBM/MAX-Image-Colorizer.svg?branch=master)](https://travis-ci.com/IBM/MAX-Image-Colorizer) [![Website Status](https://img.shields.io/website/http/max-image-colorizer.max.us-south.containers.appdomain.cloud/swagger.json.svg?label=api+demo)](http://max-image-colorizer.max.us-south.containers.appdomain.cloud/)
 
+# IBM Code Model Asset Exchange: Image Translation (Grayscale to Color)
 
 This repository contains code to instantiate and deploy an image translation model. This model is a Generative Adversarial Network (GAN) that was trained by the [IBM CODAIT Team](http://codait.org) on [COCO dataset](http://mscoco.org/) images converted to grayscale and produces colored images. The input to the model is a grayscale image (jpeg or png), and the output is a colored 256 by 256 image (increased resolution will be added in future releases).
 
