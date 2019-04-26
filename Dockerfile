@@ -1,12 +1,12 @@
-FROM codait/max-base:v1.1.0
+FROM codait/max-base:v1.1.1
 
 # Fill in these with a link to the bucket containing the model and the model file name
 ARG model_bucket=http://max-assets.s3-api.us-geo.objectstorage.softlayer.net/image-colorizer/1.0
 ARG model_file=assets.tar.gz
 
 WORKDIR /workspace
-RUN wget -nv --show-progress --progress=bar:force:noscroll ${model_bucket}/${model_file} --output-document=/workspace/assets/${model_file}
-RUN tar -x -C assets/ -f assets/${model_file} -v && rm assets/${model_file}
+RUN wget -nv --show-progress --progress=bar:force:noscroll ${model_bucket}/${model_file} --output-document=/workspace/assets/${model_file} && \
+  tar -x -C assets/ -f assets/${model_file} -v && rm assets/${model_file}
 
 
 COPY requirements.txt /workspace
