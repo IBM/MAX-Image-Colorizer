@@ -25,7 +25,7 @@ The model is based on Christopher Hesse's [Tensorflow implementation of the pix2
 | This repository | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [LICENSE](LICENSE) |
 | Model Code (3rd party) | [MIT](https://opensource.org/licenses/MIT) | [TensorFlow pix2pix Repository](https://github.com/affinelayer/pix2pix-tensorflow/blob/master/LICENSE.txt) |
 | Model Weights | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [LICENSE](LICENSE)
-| Test Assets | [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/) | [Asset README](assets/README.md)
+| Test Assets | [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/) | [Asset README](samples/README.md)
 
 ## Pre-requisites:
 
@@ -114,7 +114,7 @@ Use the `model/predict` endpoint to load a test grayscale image (you can use one
 You can also test it on the command line, for example:
 
 ```
-curl -F "image=@assets/bw-city.jpg" -XPOST http://localhost:5000/model/predict > result.png
+curl -F "image=@samples/bw-city.jpg" -XPOST http://localhost:5000/model/predict > result.png
 ```
 
 
