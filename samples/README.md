@@ -4,7 +4,7 @@
 
 The model files were trained on [Watson Deep Learning](https://www.ibm.com/cloud/deep-learning).
 
-_Note_ the model files are hosted on [IBM Cloud Object Storage](http://max-assets.s3-api.us-geo.objectstorage.softlayer.net/tf/pix2pix/pix2pix-bw-to-color.tar.gz).
+_Note_ the model files are hosted on [IBM Cloud Object Storage](http://max-assets.s3.us.cloud-object-storage.appdomain.cloud/image-colorizer/1.0/assets.tar.gz).
 
 ## Images
 
