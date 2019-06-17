@@ -114,7 +114,7 @@ Use the `model/predict` endpoint to load a test grayscale image (you can use one
 You can also test it on the command line, for example:
 
 ```
-curl -F "image=@assets/bw-city.jpg" -XPOST http://localhost:5000/model/predict > result.png
+curl -F "image=@samples/bw-city.jpg" -XPOST http://localhost:5000/model/predict > result.png
 ```
 
 
