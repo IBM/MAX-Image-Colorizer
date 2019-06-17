@@ -1,3 +1,4 @@
+
 #
 # Copyright 2018-2019 IBM Corp. All Rights Reserved.
 #
@@ -14,7 +15,7 @@
 # limitations under the License.
 #
 
-FROM codait/max-base:v1.1.1
+FROM codait/max-base:v1.1.3
 
 # Fill in these with a link to the bucket containing the model and the model file name
 ARG model_bucket=http://max-assets.s3.us.cloud-object-storage.appdomain.cloud/image-colorizer/1.0
