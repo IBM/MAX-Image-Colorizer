@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/IBM/MAX-Image-Colorizer.svg?branch=master)](https://travis-ci.org/IBM/MAX-Image-Colorizer) [![Website Status](https://img.shields.io/website/http/max-image-colorizer.max.us-south.containers.appdomain.cloud/swagger.json.svg?label=api+demo)](http://max-image-colorizer.max.us-south.containers.appdomain.cloud/)
 
-[<img src="docs/deploy-max-to-ibm-cloud-with-kubernetes-button.png" width="400px">]
+[<img src="docs/deploy-max-to-ibm-cloud-with-kubernetes-button.png" width="400px">](http://ibm.biz/max-to-ibm-cloud-tutorial)
 
 # IBM Code Model Asset Exchange: Image Translation (Grayscale to Color)
 
