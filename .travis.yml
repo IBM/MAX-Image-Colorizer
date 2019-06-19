@@ -16,14 +16,15 @@
 
 language: python
 python:
-- 3.6
+  - 3.6
 services:
-- docker
+  - docker
 install:
-- docker build -t max-image-colorizer .
-- docker run -it -d -p 5000:5000 max-image-colorizer
+  - docker build -t max-image-colorizer .
+  - docker run -it -d -p 5000:5000 max-image-colorizer
+  - pip install pytest requests pillow flake8
 before_script:
-- pip install pytest requests pillow
-- sleep 10
+  - flake8 . --max-line-length=127
+  - sleep 30
 script:
-- pytest tests/test.py
+  - pytest tests/test.py
