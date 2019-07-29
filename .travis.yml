@@ -22,7 +22,7 @@ services:
 install:
   - docker build -t max-image-colorizer .
   - docker run -it -d -p 5000:5000 max-image-colorizer
-  - pip install pytest requests pillow flake8
+  - pip install -r requirements-test.txt
 before_script:
   - flake8 . --max-line-length=127
   - sleep 30
