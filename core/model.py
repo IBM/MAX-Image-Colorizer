@@ -17,7 +17,6 @@
 from maxfw.model import MAXModelWrapper
 
 import tensorflow as tf
-from tensorflow.contrib.saved_model.python.saved_model import signature_def_utils
 from tensorflow import saved_model as sm
 import logging
 from config import DEFAULT_MODEL_PATH, ERR_MSG, MODEL_NAME, MODEL_LICENSE, MODEL_ID
@@ -42,8 +41,7 @@ class ModelWrapper(MAXModelWrapper):
         sess = tf.Session(graph=tf.Graph())
         # Load the graph
         model_graph_def = sm.loader.load(sess, [sm.tag_constants.SERVING], path)
-        sig_def = signature_def_utils.get_signature_def_by_key(model_graph_def,
-                                                               sm.signature_constants.DEFAULT_SERVING_SIGNATURE_DEF_KEY)
+        sig_def = model_graph_def.signature_def[sm.signature_constants.DEFAULT_SERVING_SIGNATURE_DEF_KEY]
 
         input_name = sig_def.inputs['input_images'].name
         output_name = sig_def.outputs['output_images'].name
