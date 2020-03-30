@@ -18,7 +18,7 @@
 FROM codait/max-base:v1.3.2
 
 # Fill in these with a link to the bucket containing the model and the model file name
-ARG model_bucket=https://max.cdn.appdomain.cloud/max-image-colorizer/1.0.0
+ARG model_bucket=https://max-cdn.cdn.appdomain.cloud/max-image-colorizer/1.0.0
 ARG model_file=assets.tar.gz
 
 WORKDIR /workspace
