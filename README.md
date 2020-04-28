@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/IBM/MAX-Image-Colorizer.svg?branch=master)](https://travis-ci.org/IBM/MAX-Image-Colorizer) [![Website Status](https://img.shields.io/website/http/max-image-colorizer.max.us-south.containers.appdomain.cloud/swagger.json.svg?label=api+demo)](http://max-image-colorizer.max.us-south.containers.appdomain.cloud/)
+[![Build Status](https://travis-ci.com/IBM/MAX-Image-Colorizer.svg?branch=master)](https://travis-ci.com/github/IBM/MAX-Image-Colorizer) [![Website Status](https://img.shields.io/website/http/max-image-colorizer.codait-prod-41208c73af8fca213512856c7a09db52-0000.us-east.containers.appdomain.cloud/swagger.json.svg?label=api+demo)](http://max-image-colorizer.codait-prod-41208c73af8fca213512856c7a09db52-0000.us-east.containers.appdomain.cloud)
 
 [<img src="docs/deploy-max-to-ibm-cloud-with-kubernetes-button.png" width="400px">](http://ibm.biz/max-to-ibm-cloud-tutorial)
 
@@ -6,7 +6,7 @@
 
 This repository contains code to instantiate and deploy an image translation model. This model is a Generative Adversarial Network (GAN) that was trained by the [IBM CODAIT Team](http://codait.org) on [COCO dataset](http://mscoco.org/) images converted to grayscale and produces colored images. The input to the model is a grayscale image (jpeg or png), and the output is a colored 256 by 256 image (increased resolution will be added in future releases).
 
-The model is based on Christopher Hesse's [Tensorflow implementation of the pix2pix model](https://github.com/affinelayer/pix2pix-tensorflow). The model files are hosted on [IBM Cloud Object Storage](https://s3.us-south.cloud-object-storage.appdomain.cloud/max-assets-prod/max-image-colorizer/1.0.0/assets.tar.gz). The code in this repository deploys the model as a web service in a Docker container. This repository was developed as part of the [IBM Code Model Asset Exchange](https://developer.ibm.com/code/exchanges/models/) and the public API is powered by [IBM Cloud](https://ibm.biz/Bdz2XM).
+The model is based on Christopher Hesse's [Tensorflow implementation of the pix2pix model](https://github.com/affinelayer/pix2pix-tensorflow). The model files are hosted on [IBM Cloud Object Storage](https://max-cdn.cdn.appdomain.cloud/max-image-colorizer/1.0.0/assets.tar.gz). The code in this repository deploys the model as a web service in a Docker container. This repository was developed as part of the [IBM Code Model Asset Exchange](https://developer.ibm.com/code/exchanges/models/) and the public API is powered by [IBM Cloud](https://ibm.biz/Bdz2XM).
 
 ## Model Metadata
 | Domain | Application | Industry  | Framework | Training Data | Input Data Format |
