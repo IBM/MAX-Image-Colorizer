@@ -4,7 +4,7 @@
 
 The model files were trained on [Watson Deep Learning](https://www.ibm.com/cloud/deep-learning).
 
-_Note_ the model files are hosted on [IBM Cloud Object Storage](https://s3.us-south.cloud-object-storage.appdomain.cloud/max-assets-prod/max-image-colorizer/1.0.0/assets.tar.gz).
+_Note_ the model files are hosted on [IBM Cloud Object Storage](https://max-cdn.cdn.appdomain.cloud/max-image-colorizer/1.0.0/assets.tar.gz).
 
 ## Images
 
