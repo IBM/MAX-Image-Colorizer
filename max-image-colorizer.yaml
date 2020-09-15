@@ -43,6 +43,6 @@ spec:
     spec:
       containers:
       - name: max-image-colorizer
-        image: codait/max-image-colorizer:latest
+        image: quay.io/codait/max-image-colorizer:latest
         ports:
         - containerPort: 5000
