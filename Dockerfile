@@ -21,7 +21,7 @@ FROM quay.io/codait/max-base:v1.4.0
 ARG model_bucket=https://max-cdn.cdn.appdomain.cloud/max-image-colorizer/1.0.0
 ARG model_file=assets.tar.gz
 
-RUN wget -nv --show-progress --progress=bar:force:noscroll ${model_bucket}/${model_file} --output-document=/workspace/assets/${model_file} && \
+RUN wget -nv --show-progress --progress=bar:force:noscroll ${model_bucket}/${model_file} --output-document=assets/${model_file} && \
   tar -x -C assets/ -f assets/${model_file} -v && rm assets/${model_file}
 
 
